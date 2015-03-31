@@ -1,0 +1,24 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Setup user-specific environment variables
+EDITOR=vim
+
+# User specific aliases and functions
+export PATH=/usr/local/cuda/bin:~/.cabal/bin:$PATH
+alias toClip='xclip -i -selection clipboard'
+
+# Update my dotfiles using dotfiles.sh
+dotfiles.sh --dotfiles-dir ~/dotfiles update
+# Start GNOME Keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+# You probably need to do this too:
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+# Set primus to work with compositing WMs (like XMonad)
+export PRIMUS_UPLOAD=1
+# Try and use the fix for Java window weirdness
+export _JAVA_AWT_WM_NONREPARENTING=1

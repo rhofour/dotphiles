@@ -1,0 +1,19 @@
+taffybar &
+firefox &
+thunderbird &
+xscreensaver &
+dropbox start
+nm-applet &
+mpd &
+
+# Do keyboard stuff
+# Disable Caps Lock
+xmodmap ~/.xmodmaprc
+# Disable accessibility features
+xkbset -a
+
+# Startup IRC connection
+#roxterm --role=IRC -e ssh angel -t 'tmux attach;/bin/bash -l' &
+terminator --role=IRC -x ssh angel -t 'tmux attach;/bin/bash -l' &
+# Set background
+eval $(cat ~/.fehbg)

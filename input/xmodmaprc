@@ -1,0 +1,3 @@
+remove lock = Caps_Lock
+remove mod5 = ISO_Level3_Shift
+keysym Caps_Lock = ISO_Level3_Shift
