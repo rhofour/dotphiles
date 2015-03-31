@@ -21,7 +21,7 @@ dotsyncrc
 #ack/ackrc
 #aptitude
 bash/bashrc
-#bin:bin
+bin:bin
 #ctags/ctags
 #cmus
 #curl/curlrc
