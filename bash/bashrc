@@ -7,6 +7,7 @@ fi
 
 # Setup user-specific environment variables
 EDITOR=vim
+LESS=-Ri
 
 # User specific aliases and functions
 export PATH=/usr/local/cuda/bin:~/.cabal/bin:$PATH
