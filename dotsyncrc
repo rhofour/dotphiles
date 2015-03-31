@@ -20,6 +20,7 @@
 dotsyncrc
 #ack/ackrc
 #aptitude
+bash/bashrc
 #bin:bin
 #ctags/ctags
 #cmus
@@ -31,8 +32,10 @@ dotsyncrc
 #git/gitk
 #gnupg
 #grc
-#input/editrc
-#input/inputrc
+input/editrc
+input/haskeline
+input/inputrc
+input/xmodmaprc
 #irssi
 #mpd/mpd.conf
 #mercurial/hgrc
@@ -41,6 +44,7 @@ dotsyncrc
 #mutt/muttrc
 #mutt/offlineimaprc
 #mysql/my.cnf
+ncmpcpp
 #ncmpcpp/config
 #ncmpcpp/error.log
 #postgresql/psqlrc
@@ -65,8 +69,10 @@ dotsyncrc
 #tmux/tmuxinator
 #vim/dotvim:.vim
 #vim/vimrc
+vim
 #vim/gvimrc
 #wget/wgetrc
+xmonad
 #zsh/fasdrc
 #zsh/dotzsh:.zsh
 #zsh/zlogin
@@ -88,5 +94,6 @@ dotsyncrc
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
+nc-ssd.rofer.me                  git=NONE
+angel.rofer.me                   git=nc-ssd.rofer.me
 [endhosts]
-
