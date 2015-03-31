@@ -21,6 +21,7 @@ dotsyncrc
 #ack/ackrc
 #aptitude
 bash/bashrc
+bash/bashrc-specific
 bin:bin
 #ctags/ctags
 #cmus
@@ -95,5 +96,5 @@ xmonad
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 nc-ssd.rofer.me                  git=NONE
-angel                            git=nc-ssd.rofer.me
+angel                            rsync=nc-ssd.rofer.me
 [endhosts]
