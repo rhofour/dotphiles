@@ -34,3 +34,6 @@
 [submodule "vim/bundle/neobundle.vim"]
 	path = vim/bundle/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim
+[submodule "vim/bundle/csapprox"]
+	path = vim/bundle/csapprox
+	url = https://github.com/godlygeek/csapprox
