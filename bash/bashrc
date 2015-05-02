@@ -16,3 +16,8 @@ alias toClip='xclip -i -selection clipboard'
 if [ -f $HOME/.bashrc-specific ]; then
   source $HOME/.bashrc-specific
 fi
+
+# Load private configuration information
+if [ -f $HOME/.bashrc-private ]; then
+  source $HOME/.bashrc-private
+fi
