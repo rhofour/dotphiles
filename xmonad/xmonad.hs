@@ -6,6 +6,7 @@ import "dbus" DBus.Client
 
 import XMonad
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.EwmhDesktops (ewmh)
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.SetWMName
 import qualified XMonad.StackSet as W
@@ -14,6 +15,8 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.ToggleLayouts
 import XMonad.Util.Run
 import XMonad.Util.EZConfig
+
+import System.Taffybar.Hooks.PagerHints (pagerHints)
 
 import Graphics.X11.ExtraTypes.XF86
 import Graphics.X11.ExtraTypes.XorgDefault
@@ -39,7 +42,11 @@ myWorkspaces = map show $ [1 .. 9 :: Int] ++ [0]
 main = do
      session <- getEnv "DESKTOP_SESSION"
      client <- connectSession
-     xmonad  $ withUrgencyHook NoUrgencyHook $ defaultConfig
+     xmonad  $
+      withUrgencyHook NoUrgencyHook $
+      -- give taffybar logger information
+      ewmh $ pagerHints $
+      defaultConfig
       { terminal   = "terminator"
       , modMask    = myModMask
       , workspaces = myWorkspaces
@@ -49,12 +56,6 @@ main = do
       , handleEventHook = docksEventHook
       , manageHook = manageDocks <+> myManageHook 
       , layoutHook = avoidStruts $ myLayouts
-      , logHook    = dbusLogWithPP (client :: DBus.Client.Client) taffybarPP
-        { ppCurrent = taffybarColor "yellow" "" . wrap "[" "]"
-        , ppTitle = taffybarColor "green" "" . shorten 50
-        , ppUrgent = taffybarColor "yellow" "red"
-        , ppLayout = const "" -- to disable the layout info
-        }
       --, startupHook = setWMName "LG3D" -- Warning: this can break GTK3 stuff
       } `additionalKeys`
       [ ((myModMask, xK_0), windows $ W.greedyView $ last myWorkspaces)
