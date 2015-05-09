@@ -72,4 +72,6 @@ main = do
       , ((0, xF86XK_AudioRaiseVolume), safeSpawn "amixer" ["set", "Master", "2500+"])
       , ((0, xF86XK_AudioLowerVolume), safeSpawn "amixer" ["set", "Master", "2500-"])
       , ((0, xF86XK_AudioMute), safeSpawn "amixer" ["set", "Master", "toggle"])
+      , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight +10")
+      , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -10")
       ]

@@ -65,6 +65,7 @@ ncmpcpp
 #shell/urlview
 #ssh
 #subversion
+taffybar/taffybar.hs:.config/taffybar/taffybar.hs
 #task/task
 #task/taskrc
 #tmux/tmux.conf
@@ -97,7 +98,6 @@ xmonad
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
-nc-ssd.rofer.me                  git=NONE
-overpowered.rofer.me                  git=NONE
-angel                            rsync=nc-ssd.rofer.me
+overpowered.rofer.me             git=NONE
+angel                            rsync=overpowered.rofer.me
 [endhosts]
