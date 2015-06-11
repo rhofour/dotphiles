@@ -28,7 +28,7 @@ bin:bin
 #curl/curlrc
 fehbg
 git/gitconfig
-#git/gitignore
+git/gitignore
 #git/gitattributes
 #git/tigrc
 #git/gitk
