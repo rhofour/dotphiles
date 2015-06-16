@@ -122,6 +122,8 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'vim-latex/vim-latex'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'plasticboy/vim-markdown'
 call neobundle#end()
 
 " Required:
