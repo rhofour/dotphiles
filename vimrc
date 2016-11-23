@@ -124,6 +124,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'vim-latex/vim-latex'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'leafgarland/typescript-vim'
 call neobundle#end()
 
 " Required:
