@@ -10,7 +10,7 @@
 # Global Config
 [user]
     name = Richard Alex Hofer
-    email = atomic.quark@gmail.com
+	email = rhofer@alumni.cmu.edu
     #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -67,3 +67,5 @@
 
 #[url "git@github.com:"]
 #    insteadof = github:
+[bz]
+	browser = firefox3
