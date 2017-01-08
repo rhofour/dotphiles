@@ -72,7 +72,6 @@ ncmpcpp
 #vim/dotvim:.vim
 #vim/vimrc
 vim
-vimrc
 #vim/gvimrc
 #wget/wgetrc
 xmonad

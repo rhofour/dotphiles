@@ -125,6 +125,8 @@ NeoBundle 'vim-latex/vim-latex'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
 call neobundle#end()
 
 " Required:
