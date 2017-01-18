@@ -12,6 +12,9 @@ LESS=-Ri
 # User specific aliases and functions
 alias toClip='xclip -i -selection clipboard'
 
+# Set prompt to have inverted colors to make it stand out
+PS1="\[\e[7m\][\u@\h \W]\$\[\e[0m\] "
+
 # Load machine-specific configuration
 if [ -f $HOME/.bashrc-specific ]; then
   source $HOME/.bashrc-specific
