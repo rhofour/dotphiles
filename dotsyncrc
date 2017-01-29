@@ -100,4 +100,5 @@ overpowered.rofer.me             git=NONE
 laptop.rofer.me                  git=NONE
 angel                            rsync=overpowered.rofer.me
 desktop.rofer.me                 git=ANY
+computing-vm                     git=ANY
 [endhosts]
