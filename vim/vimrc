@@ -127,6 +127,8 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
+" Automatically figure out when to use tabs or spaces
+NeoBundle 'tpope/vim-sleuth'
 call neobundle#end()
 
 " Required:
@@ -154,3 +156,6 @@ let g:airline#extensions#tabline#enabled = 1
 au WinLeave * set nocursorcolumn
 au WinEnter * set cursorcolumn
 set cursorcolumn
+" Make tabs more obvious
+set list
+set listchars=tab:>-
