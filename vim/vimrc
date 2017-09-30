@@ -129,6 +129,10 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 " Automatically figure out when to use tabs or spaces
 NeoBundle 'tpope/vim-sleuth'
+" Show which match we're at when searching
+NeoBundle 'henrik/vim-indexed-search'
+" Improve Haskell handling
+NeoBundle 'nbouscal/vim-stylish-haskell'
 call neobundle#end()
 
 " Required:

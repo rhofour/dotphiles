@@ -8,6 +8,7 @@ fi
 # Setup user-specific environment variables
 EDITOR=vim
 LESS=-Ri
+LADSPA_PATH=/usr/lib64/ladspa
 
 # User specific aliases and functions
 alias toClip='xclip -i -selection clipboard'

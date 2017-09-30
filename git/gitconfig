@@ -10,7 +10,7 @@
 # Global Config
 [user]
     name = Richard Alex Hofer
-	email = rhofer@alumni.cmu.edu
+    useConfigOnly = true
     #signingkey = **Your GPG ID**
 
 [branch "master"]
