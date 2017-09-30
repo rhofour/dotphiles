@@ -97,7 +97,7 @@ xmonad
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 overpowered.rofer.me             git=NONE
-laptop.rofer.me                  git=NONE
+laptop-2017.rofer.me             git=NONE
 angel                            rsync=overpowered.rofer.me
 desktop.rofer.me                 git=ANY
 computing-vm                     git=ANY
