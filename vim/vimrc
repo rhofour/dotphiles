@@ -131,8 +131,8 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-sleuth'
 " Show which match we're at when searching
 NeoBundle 'henrik/vim-indexed-search'
-" Improve Haskell handling
-NeoBundle 'nbouscal/vim-stylish-haskell'
+" Do fancy formatting
+NeoBundle 'sbdchd/neoformat'
 call neobundle#end()
 
 " Required:
@@ -163,3 +163,9 @@ set cursorcolumn
 " Make tabs more obvious
 set list
 set listchars=tab:>-
+" Autoformat on save
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
