@@ -133,6 +133,8 @@ NeoBundle 'tpope/vim-sleuth'
 NeoBundle 'henrik/vim-indexed-search'
 " Do fancy formatting
 NeoBundle 'sbdchd/neoformat'
+" Allow navigation by indent levels
+NeoBundle 'jeetsukumaran/vim-indentwise'
 call neobundle#end()
 
 " Required:
