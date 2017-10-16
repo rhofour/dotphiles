@@ -135,6 +135,8 @@ NeoBundle 'henrik/vim-indexed-search'
 NeoBundle 'sbdchd/neoformat'
 " Allow navigation by indent levels
 NeoBundle 'jeetsukumaran/vim-indentwise'
+" Add support for Elm
+NeoBundle 'ElmCast/elm-vim'
 call neobundle#end()
 
 " Required:
@@ -165,9 +167,5 @@ set cursorcolumn
 " Make tabs more obvious
 set list
 set listchars=tab:>-
-" Autoformat on save
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
-
+" Make it easy to autoformat
+nnoremap <Leader>f Neoformat
