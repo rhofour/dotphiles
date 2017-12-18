@@ -169,3 +169,5 @@ set list
 set listchars=tab:>-
 " Make it easy to autoformat
 nnoremap <Leader>f Neoformat
+" Always autoformat Elm
+let g:elm_format_autosave = 1
