@@ -12,6 +12,7 @@ LADSPA_PATH=/usr/lib64/ladspa
 
 # User specific aliases and functions
 alias toClip='xclip -i -selection clipboard'
+alias localWebserver='http-server -c-1 -a 127.0.0.1'
 
 # Set prompt to have inverted colors to make it stand out
 PS1="\[\e[7m\][\u@\h \W]\$\[\e[0m\] "
