@@ -82,6 +82,12 @@ xmonad
 #zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
+prezto/runcoms/zlogin
+prezto/runcoms/zlogout
+prezto/runcoms/zpreztorc
+prezto/runcoms/zprofile
+prezto/runcoms/zshenv
+prezto/runcoms/zshrc
 [endfiles]
 
 # Hosts to sync
