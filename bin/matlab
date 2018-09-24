@@ -1,1 +1,0 @@
-~/Apps/Matlab/bin/matlab -nodesktop -nosplash "$@"
