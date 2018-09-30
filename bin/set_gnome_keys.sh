@@ -21,9 +21,15 @@ dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-7 "['<Shift><Sup
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-8 "['<Shift><Super>8']"
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-9 "['<Shift><Super>9']"
 
-# Shellshape stuff
-dconf write /org/gnome/shell/extensions/net/gfxmonk/shellshape/keybindings/set-layout-floating "['<Super>t']"
-dconf write /org/gnome/shell/extensions/net/gfxmonk/shellshape/keybindings/set-layout-fullscreen "['<Super>f']"
+# Add custom keybindings
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'Launch terminal'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Shift><Super>Return'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'gnome-terminal'"
+
+# Enable custom keybindings
+# Note: This disables all other custom bindings
+c0="'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[$c0]"
 
 # Disable caps-lock
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:none']"
