@@ -43,3 +43,6 @@
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/rhofour/prezto.git
+[submodule "vim/pack/typescript/start/typescript-vim"]
+	path = vim/pack/typescript/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
