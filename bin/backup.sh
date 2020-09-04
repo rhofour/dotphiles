@@ -1,4 +1,6 @@
 #!/bin/sh
-tar -cvzf ssh.tar.gz ~/.ssh/ && gpg -c ssh.tar.gz && scp ssh.tar.gz angel:~/backups/`date -I`-ssh.tar.gz.gpg
-rm ssh.tar.gz
-rm ssh.tar.gz.gpg
+NAME=core_backup
+tar -cvzf $NAME.tar.gz ~/.ssh/ ~/.borg_backup_key
+gpg -c $NAME.tar.gz
+rm $NAME.tar.gz
+scp $NAME.tar.gz.gpg angel:~/backups/`date -I`-$NAME.tar.gz.gpg

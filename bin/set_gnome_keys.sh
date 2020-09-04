@@ -1,5 +1,21 @@
 #!/bin/sh
+
+# Exit if something below fails
+f () {
+    errorCode=$? # save the exit code as the first thing done in the trap function
+    echo "error $errorCode: the command executing at the time of the error was:"
+    echo "$BASH_COMMAND: on line ${BASH_LINENO[0]}"
+    # do some error handling, cleanup, logging, notification
+    # $BASH_COMMAND contains the command that was being executed at the time of the trap
+    # ${BASH_LINENO[0]} contains the line number in the script of that command
+    # exit the script or return to try again, etc.
+    exit $errorCode  # or use some other value or do return instead
+}
+trap f ERR
+
 dconf write /org/gnome/desktop/wm/keybindings/close "['<Shift><Super>c']"
+
+dconf write /org/gnome/desktop/wm/preferences "9"
 
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-1 "['<Super>1']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-2 "['<Super>2']"
@@ -33,3 +49,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "[$
 
 # Disable caps-lock
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:none']"
+
+# Move overlay key to right alt rather than super to avoid conflicts
+gsettings set org.gnome.mutter overlay-key 'Super_R'
+
+echo "Done."
